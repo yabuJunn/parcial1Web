@@ -1,16 +1,34 @@
 import './CategoryOption.css'
 
-export const CategoryOption = () => {
-    return <>
-        <input
-            type="radio" name="emotion"
-            id="sad" className="categoryOption" />
-        <label htmlFor="sad">
-            <div id='imageContainer'>
-                <img src="https://picsum.photos/200/300" alt="" />
-            </div>
-            <p>Titulo</p>
-            <p>Precio</p>
-        </label>
-    </>
+// eslint-disable-next-line react/prop-types
+export const CategoryOption = ({ titulo, precio, imagen, selected }) => {
+
+    if (selected) {
+        return <>
+            <input
+                type="radio" name="emotion"
+                id={titulo} className="categoryOption" onChange={() => { }} />
+            <label htmlFor={titulo}>
+                <div id='imageContainer'>
+                    <img src={imagen} alt="" />
+                </div>
+                <p>{titulo}</p>
+                <p>{precio}</p>
+            </label>
+        </>
+    } else {
+        return <>
+            <input
+                type="radio" name="emotion"
+                id={titulo} className="categoryOption" onChange={() => { }} />
+            <label htmlFor={titulo}>
+                <div id='imageContainer'>
+                    <img src={imagen} alt="" />
+                </div>
+                <p>{titulo}</p>
+                <p>{precio}</p>
+            </label>
+        </>
+    }
+
 }
