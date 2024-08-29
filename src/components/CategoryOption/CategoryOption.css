@@ -1,0 +1,25 @@
+label {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    background-color: white;
+    color: brown;
+}
+
+label #imageContainer {
+    width: 100px;
+    height: 100px;
+
+    overflow: hidden;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+label #imageContainer img {
+    width: 100%;
+}

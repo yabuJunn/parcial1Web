@@ -1,0 +1,10 @@
+.CategoryContainer {
+    width: 100%;
+
+    background-color: brown;
+}
+
+#categoryInputs {
+    display: flex;
+    align-items: center;
+}
