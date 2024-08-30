@@ -11,6 +11,8 @@ export const CategoriesContainer = () => {
             <p>¡Arma tu plan de viajes personalizado!</p>
 
             <CategorySelector data={planDeViajes.alimentacion} title={"Alimentacion"}></CategorySelector>
+            <CategorySelector data={planDeViajes.hoteles} title={"Hoteles"}></CategorySelector>
+            <CategorySelector data={planDeViajes.destinosdla} title={"Destinos de LA"}></CategorySelector>
         </div>
     </>
 }
